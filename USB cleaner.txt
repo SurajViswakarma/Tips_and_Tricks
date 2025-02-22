@@ -1,0 +1,26 @@
++-------------------------------+---------------------------------------------------------------+
+| Step                          | Command/Action                                                |
++-------------------------------+---------------------------------------------------------------+
+| Open Command Prompt           | Press Win + S → Type "cmd" → Right-click → Run as administrator|
++-------------------------------+---------------------------------------------------------------+
+| Launch DiskPart Utility       | diskpart → Press Enter                                        |
++-------------------------------+---------------------------------------------------------------+
+| List Available Disks          | list disk → Press Enter                                       |
+|                               | *Identify USB by size (e.g., Disk 1 with 16 GB).*              |
++-------------------------------+---------------------------------------------------------------+
+| Select Your USB Drive         | select disk X → Replace X with your USB disk number           |
+|                               | *Example: select disk 1*                                      |
++-------------------------------+---------------------------------------------------------------+
+| Clean the USB Drive           | clean → Press Enter                                          |
+|                               | *Removes all partitions and Windows boot info.*               |
++-------------------------------+---------------------------------------------------------------+
+| Create a New Partition        | create partition primary → Press Enter                        |
++-------------------------------+---------------------------------------------------------------+
+| Format the USB Drive          | format fs=fat32 quick → Press Enter                           |
+|                               | *(Use fs=ntfs for NTFS format if needed.)*                    |
++-------------------------------+---------------------------------------------------------------+
+| Assign a Drive Letter         | assign → Press Enter                                         |
+|                               | *USB will get a drive letter in File Explorer.*               |
++-------------------------------+---------------------------------------------------------------+
+| Exit DiskPart and CMD         | exit → Press Enter twice to close diskpart and CMD            |
++-------------------------------+---------------------------------------------------------------+
